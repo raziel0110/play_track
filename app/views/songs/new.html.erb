@@ -1,0 +1,8 @@
+<div class="container">
+  <h3>Upload new song</h3>
+  <%= form_for(@song, :html => {:enctyope => "multipart/alternative"}) do |f| %>
+    <%= f.file_field :song %>
+
+    <%= f.submit 'Submit' %>
+  <% end %>
+</div>

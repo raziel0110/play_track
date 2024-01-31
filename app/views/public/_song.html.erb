@@ -1,0 +1,10 @@
+<div>
+  <%= song.filename %>
+  <div data-controller="player">
+    <audio>
+      <source src="<%= song_path(song) %>">
+    </audio>
+    <button data-action="click->player#play">Play</button>
+    <button data-action="click->player#stop">Stop</button>
+  </div>
+</div>
